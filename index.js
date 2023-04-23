@@ -32,7 +32,7 @@ let color = 0;
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: 'http://143.42.28.233:3000',
+        origin: '*',
         methods: ['GET', 'POST']
     }
 });
